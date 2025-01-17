@@ -18,7 +18,7 @@ function Places() {
   }, []);
   const renderPlaces = () => {
     return Places.map((place) => (
-      <PlaceCard>
+      <PlaceCard key={place.id}>
         <PlaceCardLink>
           <PlaceImage src={place.image} alt="" />
           <PlaceBottomContainer>
